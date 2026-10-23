@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.effect-ci/
+.env.local
+.cloudflare/ci/ci.ts
