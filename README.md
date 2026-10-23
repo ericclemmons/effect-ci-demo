@@ -25,4 +25,4 @@ CF_ACCESS_CLIENT_SECRET=<your-access-client-secret>
 cf-ci run build --remote
 ```
 
-Remote execution checks out this repository’s origin at its pushed HEAD and discovers the root package tasks. Commit and push changes first; dirty worktrees are rejected. No target runs all discovered tasks. The host needs the repository-discovery implementation; older hosts run a fixed recipe. Custom Effect workflow modules are not supported by repository discovery yet.
+Remote execution checks out this repository’s origin at its pushed HEAD and discovers the root package tasks. Commit and push changes first; dirty worktrees are rejected. No target runs all discovered tasks. Use the current standalone Effect CI host profile, which discovers package tasks or an authored `.cloudflare/ci/workflow.ts` inside the container. Older demo hosts may advertise a fixed recipe and are not suitable for this repository-root demonstration.
